@@ -1,4 +1,38 @@
 
 body{
-    background-color: rgba(236, 168, 43, 0.57);
+    background-image: linear-gradient(to right, #07A77B, #06BF7C);
+}
+
+main{
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px #03554e9b;
+    width: 600px;
+    padding: 10px;
+    margin: auto;
+}
+
+h1{
+    color: #01568C;
+    text-align: center; /*Alinhar o texto ao centro*/
+    text-shadow: 1px 1px 2px #002f4bcf; /*Mesmo fundamento e método do box-shadow*/
+}
+
+h2{
+    color: #048C80;
+}
+
+p{
+    text-align: justify;
+}
+
+#chamada{
+    color: #02436b;
+    text-align: center; /*Alinhar o texto ao centro*/
+    text-shadow: 1px 1px 2px #001b2be4; /*Mesmo fundamento e método do box-shadow*/
+}
+
+footer{
+    color: #002339;
+    margin: auto;
 }
