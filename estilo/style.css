@@ -36,8 +36,6 @@ header > h1 {
 
 header > p {
     color: white;
-    text-align: justify;
-    text-indent: 30px;
 }
 
 nav{
@@ -46,21 +44,29 @@ nav{
 
 main{
     background-color: white;
-    border-radius: 10px;
-    box-shadow: 5px 5px 15px #03554e9b;
-    width: 1100px;
-    padding: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    box-shadow: 0px 0px 10px #03554e71;
+    min-width: 300px;
+    max-width: 1000px;
+    padding: 30px;
     margin: auto;
+    margin-bottom: 30px;
 }
 
 main h1{
     color: var (--cor5);
     text-align: center; /*Alinhar o texto ao centro*/
-    text-shadow: 1px 1px 2px #002f4bcf; /*Mesmo fundamento e método do box-shadow*/
+    text-shadow: 1px 1px 2px #002f4b84; /*Mesmo fundamento e método do box-shadow*/
 }
 
 main h2{
     color: #048C80;
+}
+
+main p {
+    text-align: justify;
+    text-indent: 30px;
 }
 
 ul, ol{
@@ -71,6 +77,19 @@ ul, ol{
     color: #02436b;
     text-align: center; /*Alinhar o texto ao centro*/
     text-shadow: 1px 1px 2px #001b2be4; /*Mesmo fundamento e método do box-shadow*/
+}
+
+main img{
+    width: 100%;
+    display: block;
+    margin: auto;
+
+}
+
+main iframe.pequena{
+    width: 100%;
+    display: block;
+    margin: auto;
 }
 
 footer{
