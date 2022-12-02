@@ -24,6 +24,10 @@ body{
     font-family: var(--fonte-padrao);
 }
 
+a.externo::after{
+    content: '\00A0\1F517';
+}
+
 header{
     background-image: linear-gradient(to bottom, var(--cor3), var(--cor5));
     min-height: 150px;
@@ -35,6 +39,7 @@ header > h1 {
     color: white;
     font-family: var(--fonte-destaque);
     font-size: 3em;
+    font-weight: normal;
     margin-bottom: 20px;
     text-shadow: 3px 4px 5px rgba(0, 0, 0, 0.55);
     
@@ -59,7 +64,7 @@ nav{
 }
 
 nav > a{
-    color: white;
+    color: var(--cor0);
     padding: 10px;
     border-radius: 4px;
     text-decoration: none;
@@ -85,7 +90,9 @@ main{
 }
 
 main h1{
-    color: var (--cor2);
+    color: #063d1e;
+    font-weight: normal;
+    font-size: 1.8em;
     /*text-align: center; /*Alinhar o texto ao centro*/
     text-shadow: 1px 1px 2px #002f4b84; /*Mesmo fundamento e método do box-shadow*/
 }
@@ -94,6 +101,7 @@ main h2{
     color: var(--cor5);
     text-shadow: 1px 1px 2px #002f4b84;
     font-size: 1.3em;
+    font-weight: normal;
     background-image: linear-gradient(to right, #c5ebd693, transparent);
     text-indent: 6px;
 }
@@ -125,8 +133,8 @@ main a:hover{
     color: var(--cor4);
 }
 
-ul, ol{
-    padding-left: 30px;
+ul{
+    list-style-position: inside;
 }
 
 
@@ -146,12 +154,43 @@ main iframe.pequena{
 }
 
 aside{
-
-    padding-top: 20px;
+    background-color: var(--cor0);
+    font-weight: normal;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.239);
 }
+
+aside > h3 {
+    background-color: var(--cor4);
+    color: white;
+    padding: 10px;
+    margin: -10px -10px 0px -10px;
+    border-radius: 10px 10px 0px 0px;
+    
+}
+
+aside > ol{
+    list-style-position: inside;
+    columns: 2;
+}
+
 
 footer{
     background-color: var(--cor5);
     color: white;
     text-align: center;
+    font-size: 0.8em;
+    padding: 5px;
+}
+
+footer a {
+    color: white;
+    font-weight: bolder;
+    text-decoration: none;
+}
+
+footer a:hover{
+    text-decoration: underline;
+    color: var(--cor0);
 }
